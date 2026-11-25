@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<!-- Define el idioma principal del documento como español -->
+<html lang="es">
+<head>
+    <!-- Configuración de codificación de caracteres y vista adaptable -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la pestaña para la sección de catálogo -->
+    <title>Catalogo | Herboraria y Arte</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal con marca y barra de navegación -->
+    <header class="encabezado-principal">
+        <a href="index.html" class="marca">🌿 Herboraria & Arte</a>
+
+        <button class="boton-hamburguesa" id="botonHamburguesa"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="menuNav">
+            ☰ 
+        </button>
+
+        
+        <nav aria-label="Navegacion principal">
+            <ul class="menu-nav" id="menuNav">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página de catálogo -->
+    <main>
+        <!-- Encabezado descriptivo de la sección -->
+        <section class="cabecera-pagina">
+            <h1>Catalogo Artesanal</h1>
+            <p>Descubre nuestras formulas de herbolaria y creaciones bohemias disponibles.</p>
+        </section>
+
+
+        <!-- Cuadrícula principal que contiene las tarjetas de todos los productos -->
+        <section class="grid-catalogo" aria-label="Lista de productos">
+            
+            <!-- Tarjeta del producto 1: Jabón de Avena, Miel y Vainilla -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonAvenaGrande.jpeg" alt="Jabon artesanal de Avena, Miel y Vainilla">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabón Avena, Miel y Vainilla 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Seca a Deshidratada.</p>
+                    <p class="descripcion">Exfolia muy suavemente, calma y humecta la piel y aporta propiedades antioxidantes (No incluye jabonera). </p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 1.1: Jabón de Avena, Miel y Vainilla -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonAvenaChico.jpeg" alt="Jabon artesanal de Avena, Miel y Vainilla">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabón Avena, Miel y Vainilla 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Seca a Deshidratada.</p>
+                    <p class="descripcion">Exfolia muy suavemente, calma y humecta la piel y aporta propiedades antioxidantes (No incluye jabonera). </p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 2: Jabón de Arcilla Verde y Romero  -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonArcillaVerdeGrande.jpeg" alt="Jabon artesanal de arcilla verde y romero">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Arcilla Verde y Romero 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Grasa, con tendencia al acne o impurezas.</p>
+                    <p class="descripcion">Absorbe el exeso de grasa y toxinas limpiando los poros a profundidad y aporta propiedades antisepticas y astringentes (No incluye jabonera).</p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 2.1: Jabón de Arcilla Verde y Romero -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonArcillaVerdeChico.jpeg" alt="Jabon artesanal de arcilla verde y romero">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Arcilla Verde y Romero 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Grasa, con tendencia al acne o impurezas.</p>
+                    <p class="descripcion">Absorbe el exeso de grasa y toxinas limpiando los poros a profundidad y aporta propiedades antisepticas y astringentes (No incluye jabonera).</p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 3: Jabón de Carbón Activado & Tea Tree -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonCarbonActivadoGrande.jpeg" alt="Jabon artesanal de carbon activado y arbol de te">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Carbon Activado & Tea Tree 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Grasa, con puntos negros o acne severo.</p>
+                    <p class="descripcion">Atrapa Suciedad, contaminacion, exeso de sebo y actua como bactericida y cicatrizante natural (No incluye jabonera).</p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 3.1: Jabón de Carbón Activado & Tea Tree -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonCarbonActivadoChico.jpeg" alt="Jabon artesanal de carbon activado y arbol de te">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Carbon Activado & Tea Tree 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Grasa, con puntos negros o acne severo.</p>
+                    <p class="descripcion">Atrapa Suciedad, contaminacion, exeso de sebo y actua como bactericida y cicatrizante natural (No incluye jabonera).</p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 4: Jabón de Curcuma y Naranja -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonCurcumaGrande.jpeg" alt="Jabon artesanal Curcuma y Naranja">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Curcuma y Naranja 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Apagada, mixta, con falta de vitalidad o con tendencia al acne.</p>
+                    <p class="descripcion">Potente antioxidante, antinflamatorio natural que aporta luminosidad, tambien energiza, refresca y ayuda a regenerar la piel (No incluye jabonera).</p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 4.1: Jabón de Curcuma y Naranja -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonCurcumaChico.jpeg" alt="Jabon artesanal Curcuma y Naranja">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Curcuma y Naranja 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Apagada, mixta, con falta de vitalidad o con tendencia al acne.</p>
+                    <p class="descripcion">Potente antioxidante, antinflamatorio natural que aporta luminosidad, tambien energiza, refresca y ayuda a regenerar la piel (No incluye jabonera).</p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 5: Jabón de Manzanilla y Lavanda -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonManzanillaGrande.jpeg" alt="Jabon artesanal Manzanilla y Lavanda">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Manzanilla y Lavanda 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: sensible, irritada, reactiva o infantil.</p>
+                    <p class="descripcion">Desenflama, alivia sensaciion de picazon o ardor (No incluye jabonera).</p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 5.1: Jabón de Manzanilla y Lavanda -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonManzanillaChico.jpeg" alt="Jabon artesanal Manzanilla y Lavanda">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Manzanilla y Lavanda 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: sensible, irritada, reactiva o infantil.</p>
+                    <p class="descripcion">Desenflama, alivia sensaciion de picazon o ardor (No incluye jabonera).</p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 6: Jabón de Arcilla Blanca y Lavanda -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonArcillaBlancaGrande.jpeg" alt="Jabon artesanal Arcilla Blanca y Lavanda">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Arcilla Blanca y Lavanda 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Sensible, seca o madura.</p>
+                    <p class="descripcion">Descongestiona sin resecar, calma rojeces y regenera la piel (No incluye jabonera).</p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 6.1: Jabón de Arcilla Blanca y Lavanda -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonArcillaBlancaChico.jpeg" alt="Jabon artesanal Arcilla Blanca y Lavanda">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Arcilla Blanca y Lavanda 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Sensible, seca o madura.</p>
+                    <p class="descripcion">Descongestiona sin resecar, calma rojeces y regenera la piel (No incluye jabonera).</p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 7: Jabón de Arroz y Canela -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonArrozGrande.jpeg" alt="Jabon artesanal Arroz y Canela">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Arroz y Canela 100gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Con manchas, tono irregular o marcas.</p>
+                    <p class="descripcion">Aclara progresivamente las manchas, suaviza la textura y activa la microcirculacion sanguinea (No incluye jabonera).</p>
+                    <p class="precio">$60.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+            <!-- Tarjeta del producto 7.1: Jabón de Arroz y Canela -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JabonArrozChico.jpeg" alt="Jabon artesanal Arroz y Canela">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabon Arroz y Canela 50gr</h2>
+                    <p class="tipodepiel">Tipo de piel: Con manchas, tono irregular o marcas.</p>
+                    <p class="descripcion">Aclara progresivamente las manchas, suaviza la textura y activa la microcirculacion sanguinea (No incluye jabonera).</p>
+                    <p class="precio">$40.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 8: Jabonera de Madera Oscura -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JaboneraCafe.jpg" alt="Jabonera de Madera Cafe Oscuro">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabonera de Madera Oscura</h2>
+                    <p class="descripcion">Diseño con ranuras de drenaje que evita la acumulacion de agua y alarga la vida de tu jabon. Acabado rustico en tono oscuro. (Precio por pieza).</p>
+                    <p class="precio">$30.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+
+            </article>
+
+            <!-- Tarjeta del producto 8.1: Jabonera de Madera Clara -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/JaboneraBlanca.jpg" alt="Jabonera de Madera Cafe Claro">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Jabonera de Madera Clara</h2>
+                    <p class="descripcion">Base artesanal con sistema de drenaje para mantener tus jabones secos entre usos. Acabado natural en tono claro. (Precio por pieza).</p>
+                    <p class="precio">$30.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 9:  -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/Bolsadejabondesisal.jpg" alt="Bolsa de sisal para jabon de baño">
+                    <figcaption>Cosmetica Natural</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Bolsa Exfoliante para jabon</h2>
+                    <p class="descripcion"> Estropajo natural de sisal con cordon para colgar. Evita que el jabon se resbale, aprovecha hasta los trozos mas pequeños y cuida tu piel. (1 pieza).</p>
+                    <p class="precio">$30.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 10:  -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/atrapasuenostriplediosa.jpg" alt="Atrapasueños Representativo de la Triple Diosa">
+                    <figcaption>Arte Bohemio</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Atrapasueños Triple Diosa</h2>
+                    <p class="descripcion">Tejido artesanalmente con simbolo lunar y flecos en tonos azules. Ideal para darle un toque mistico a tu habitacion.</p>
+                    <p class="precio">$800.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 11:  -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/atrapasuenosSolyLuna.jpg" alt="Duo de Atrapasueños Uno de Sol y Otro de Luna">
+                    <figcaption>Arte Bohemio</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Atrapasueños de Sol y Luna</h2>
+                    <p class="descripcion">Atrapasueños artesanal en tonos calidos y neutros. El detalle ideal para llenar de calma y estilo tu hogar.</p>
+                    <p class="precio">$1000.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 12: -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/atrapasuenosRosaGrande.jpg" alt="Atrapasueños decorativo Rosa">
+                    <figcaption>Arte Bohemio</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Atrapasueños Rosa Grande</h2>
+                    <p class="descripcion">Pieza central de gran formato montada sobre rama natural, decorada con mandalas tejidos, plumas y detalles en tonos rosa.</p>
+                    <p class="precio">$1500.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+            <!-- Tarjeta del producto 13: -->
+            <article class="tarjeta-producto">
+                <figure class="imagen-producto">
+                    <img src="img/atrapasuenosAzulGrande.jpg" alt="Atrapasueños decorativo Azul">
+                    <figcaption>Arte Bohemio</figcaption>
+                </figure>
+                <header class="info-producto">
+                    <h2>Atrapasueños Azul Grande</h2>
+                    <p class="descripcion">Tejido artesanal en tonos turquesa y crema con detalle de luna central. Aporta frescura, color y armonia a tus paredes.</p>
+                    <p class="precio">$1500.00 MXN</p>
+                    <a href="contacto.html" class="boton-secundario">Agregar al Carrito</a>
+                </header>
+            </article>
+
+        </section>
+    </main>
+
+    <!-- Pie de página con derechos de autor y enlaces secundarios -->
+    <footer class="pie-pagina">
+        <p>© 2026 Herboraria y Arte- Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces secundarios">
+            <ul class="menu-footer">
+                <li><a href="indeckx.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>

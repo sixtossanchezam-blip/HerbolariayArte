@@ -1,0 +1,506 @@
+/* Variables globales para paleta de colores, tipografías, bordes y sombras */
+:root {
+    --kolordelfondo: #FAF6F0;   
+    --kolordelasuperficie: #FFFFFF;  
+    --kolorprimario: #3B5249;   
+    --kolorsecundario: #c29979;   
+    --koloracento: #8b6d4e;    
+    --kolordeltexto: #2B2B2B;   
+    --kolordelotrotexto: #5C5C5C; 
+    --fuentedelostitulos: 'Georgia', serif;
+    --fuentedelcuerpo: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --radioborde: 12px;
+    --sombrasuave: 0 4px 12px rgba(59, 82, 73, 0.1);
+}
+
+/* Reseteo básico de márgenes, rellenos y modelo de caja para todos los elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos base del documento y prevención de desbordamiento horizontal */
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: var(--kolordelfondo);
+    color: var(--kolordeltexto);
+    font-family: var(--fuentedelcuerpo);
+    line-height: 1.6;
+}
+
+/* Ajuste responsivo por defecto para todas las imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos de la barra de navegación superior fija (sticky) */
+.encabezado-principal {
+    background-color: var(--kolorprimario);
+    color: var(--kolordelasuperficie);
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Estilo del logotipo o nombre de la marca en el encabezado */
+.marca {
+    font-family: var(--fuentedelostitulos);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--kolordelfondo);
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Contenedor de los enlaces del menú de navegación */
+.menu-nav {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Estilos de cada enlace del menú de navegación */
+.menu-nav a {
+    color: var(--kolordelfondo);
+    text-decoration: none;
+    padding: 0.4rem 0.9rem;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+/* Efecto al pasar el cursor y estado activo del enlace de navegación */
+.menu-nav a:hover,
+.menu-nav a.activo {
+    background-color: var(--kolorsecundario);
+    color: #FFFFFF;
+}
+
+/* Sección principal de bienvenida (Hero Banner) en la página de inicio */
+.banner-hero {
+    background: linear-gradient(rgba(59, 82, 73, 0.78), rgba(59, 82, 73, 0.78)),
+                url('') center/cover no-repeat;
+    color: var(--kolordelasuperficie);
+    padding: 4.5rem 1.5rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del texto dentro del banner principal */
+.banner-contenido {
+    max-width: 700px;
+}
+
+.banner-contenido h1 {
+    font-family: var(--fuentedelostitulos);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner-contenido p {
+    font-size: 1.05rem;
+    margin-bottom: 1.8rem;
+}
+
+/* Estilo del botón principal de llamada a la acción */
+.boton-principal {
+    display: inline-block;
+    background-color: var(--koloracento);
+    color: var(--kolordeltexto);
+    font-weight: bold;
+    padding: 0.8rem 1.8rem;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Efecto hover del botón principal */
+.boton-principal:hover {
+    background-color: var(--kolorsecundario);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+/* Sección de esencia artesanal en la página de inicio */
+.seccion-esencia {
+    padding: 3rem 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.seccion-esencia h2 {
+    font-family: var(--fuentedelostitulos);
+    color: var(--kolorprimario);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+    color: var(--kolordelotrotexto);
+    margin-bottom: 2rem;
+}
+
+/* Cuadrícula para las tarjetas de los pilares de la marca */
+.contenedor-pilares {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+/* Diseño individual de cada tarjeta de pilar */
+.tarjeta-pilar {
+    background-color: var(--kolordelasuperficie);
+    padding: 1.8rem;
+    border-radius: var(--radioborde);
+    box-shadow: var(--sombrasuave);
+    border-top: 4px solid var(--kolorsecundario);
+}
+
+.tarjeta-pilar h3 {
+    color: var(--kolorprimario);
+    margin-bottom: 0.6rem;
+}
+
+/* Encabezado superior para las páginas secundarias (Catálogo y Contacto) */
+.cabecera-pagina {
+    background-color: var(--koloracento);
+    color: var(--kolordeltexto);
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+}
+
+.cabecera-pagina h1 {
+    font-family: var(--fuentedelostitulos);
+    font-size: 1.9rem;
+    margin-bottom: 0.4rem;
+}
+
+/* Barra de filtros por categoría en la página de catálogo */
+.barra-categorias {
+    max-width: 1100px;
+    margin: 1.5rem auto 0;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+/* Lista horizontal de etiquetas de categorías */
+.lista-categorias {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.lista-categorias li {
+    background-color: var(--kolordelasuperficie);
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    border: 1px solid var(--koloracento);
+}
+
+.lista-categorias mark {
+    background-color: transparent;
+    color: var(--kolorprimario);
+    font-weight: bold;
+}
+
+/* Cuadrícula responsiva para mostrar los productos del catálogo */
+.grid-catalogo {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+}
+
+/* Diseño individual de cada tarjeta de producto */
+.tarjeta-producto {
+    background-color: var(--kolordelasuperficie);
+    border-radius: var(--radioborde);
+    overflow: hidden;
+    box-shadow: var(--sombrasuave);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor de la imagen y etiqueta de categoría del producto */
+.imagen-producto {
+    position: relative;
+}
+
+.imagen-producto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Etiqueta flotante sobre la imagen del producto */
+.imagen-producto figcaption {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--kolorprimario);
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.7rem;
+    border-radius: 12px;
+}
+
+/* Contenedor de detalles, descripción, precio y botón del producto */
+.info-producto {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.info-producto h2 {
+    font-family: var(--fuentedelostitulos);
+    font-size: 1.2rem;
+    color: var(--kolorprimario);
+    margin-bottom: 0.5rem;
+}
+
+.descripcion {
+    font-size: 0.92rem;
+    color: var(--kolordelotrotexto);
+    margin-bottom: 1rem;
+}
+
+.precio {
+    font-size: 1.15rem;
+    font-weight: bold;
+    color: var(--kolorsecundario);
+    margin-bottom: 1rem;
+}
+
+/* Botón secundario utilizado en las tarjetas de productos */
+.boton-secundario {
+    display: block;
+    text-align: center;
+    background-color: var(--kolorprimario);
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 0.65rem;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.boton-secundario:hover {
+    background-color: var(--kolorsecundario);
+}
+
+/* Contenedor principal de la página de contacto */
+.contenedor-contacto {
+    max-width: 1000px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Caja que envuelve al formulario de contacto */
+.formulario-contacto {
+    background-color: var(--kolordelasuperficie);
+    padding: 1.8rem;
+    border-radius: var(--radioborde);
+    box-shadow: var(--sombrasuave);
+}
+
+/* Organización vertical de los campos dentro del formulario */
+.grupo-campos {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.grupo-campos legend {
+    font-family: var(--fuentedelostitulos);
+    font-size: 1.3rem;
+    color: var(--kolorprimario);
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+}
+
+.grupo-campos label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--kolordeltexto);
+}
+
+/* Estilos compartidos para entradas de texto, selectores y áreas de texto */
+.grupo-campos input,
+.grupo-campos select,
+.grupo-campos textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--kolordelfondo);
+}
+
+/* Resaltado al seleccionar un campo del formulario */
+.grupo-campos input:focus,
+.grupo-campos select:focus,
+.grupo-campos textarea:focus {
+    outline: 2px solid var(--kolorprimario);
+    border-color: transparent;
+}
+
+/* Tarjeta lateral con información de contacto del taller */
+.info-lateral {
+    background-color: var(--kolorprimario);
+    color: var(--kolordelfondo);
+    padding: 2rem;
+    border-radius: var(--radioborde);
+    align-self: start;
+}
+
+.info-lateral h2 {
+    font-family: var(--fuentedelostitulos);
+    margin-bottom: 1rem;
+    color: var(--koloracento);
+}
+
+.info-lateral p {
+    margin-bottom: 0.8rem;
+}
+
+/* Estilos del pie de página */
+.pie-pagina {
+    background-color: var(--kolorprimario);
+    color: var(--kolordelfondo);
+    padding: 1.5rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    text-align: center;
+}
+
+.menu-footer {
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+.menu-footer a {
+    color: var(--koloracento);
+    text-decoration: none;
+}
+
+/* Media Query para pantallas medianas como tablets (mínimo 768px) */
+@media (min-width: 768px) {
+    .encabezado-principal {
+        flex-direction: row;
+        padding: 1rem 2.5rem;
+    }
+
+    .banner-contenido h1 {
+        font-size: 2.6rem;
+    }
+
+    .contenedor-pilares {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-catalogo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contenedor-contacto {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .pie-pagina {
+        flex-direction: row;
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+/* Media Query para pantallas grandes como computadoras de escritorio (mínimo 1024px) */
+@media (min-width: 1024px) {
+    .grid-catalogo {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .banner-hero {
+        padding: 6rem 2rem;
+    }
+}
+
+.boton-hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .boton-hamburguesa { display: block; }
+
+    .menu-nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-nav.abierto { display: flex; }
+}
+.mensaje-error {
+    display: block;
+    color: #b3261e;
+    font-size: 0.85rem;
+    min-height: 1.1em;
+    margin-top: 0.25rem;
+}
+
+.campo-error {
+    border: 2px solid #b3261e !important;
+    background: #fdf1f0 !important;
+}
+
+.campo-valido {
+    border: 2px solid #4a7c59 !important;
+}
+
+.mensaje-exito {
+    background: #e6f2e8;
+    color: #2d5a3d;
+    border: 1px solid #4a7c59;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}

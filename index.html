@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- Define el idioma principal del documento como español -->
+<html lang="es">
+<head>
+    <!-- Configuración de codificación de caracteres y vista adaptable a dispositivos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que aparece en la pestaña del navegador -->
+    <title>Herboraria y Arte | Inicio</title>
+
+    <!-- Vinculación con la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal con el logotipo y el menú de navegación -->
+    <header class="encabezado-principal">
+        <a href="index.html" class="marca">🌿 Herboraria & Arte</a>
+
+        <button class="boton-hamburguesa" id="botonHamburguesa"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="menuNav">
+            ☰ 
+        </button>
+
+        
+        <nav aria-label="Navegacion principal">
+            <ul class="menu-nav" id="menuNav">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página de inicio -->
+    <main>
+
+        <!-- Sección destacada de bienvenida (Banner principal) -->
+        <section class="banner-hero">
+            <article class="banner-contenido">
+                <h1>Cosmetica Natural y Arte Bohemio</h1>
+                <p>Elaboramos jabones artesanales, productos herbales y piezas unicas conectadas con la tierra y el bienestar consciente.</p>
+                <a href="productos.html" class="boton-principal">Explorar Catalogo</a>
+            </article>
+        </section>
+
+        <!-- Sección informativa sobre los valores y pilares de la marca -->
+        <section class="seccion-esencia">
+            <h2>Nuestra Esencia Artesanal</h2>
+            <p class="subtitulo">Cada producto esta formulado en lotes pequeños con ingredientes botanicos puros y respeto por la naturaleza.</p>
+            
+            <!-- Contenedor en cuadrícula para las tarjetas de pilares -->
+            <section class="contenedor-pilares">
+                <!-- Primer pilar: Ingredientes naturales -->
+                <article class="tarjeta-pilar">
+                    <h3>🌱 100% Botanico</h3>
+                    <p>Aceites esenciales, arcillas minerales y extractos de plantas sin parabenos ni quimicos agresivos.</p>
+                </article>
+                <!-- Segundo pilar: Diseño artesanal -->
+                <article class="tarjeta-pilar">
+                    <h3>🎨 Arte & Diseño</h3>
+                    <p>Piezas hechas a mano con estetica bohemia, empaques ecologicos y detalles personalizados.</p>
+                </article>
+                <!-- Tercer pilar: Sustentabilidad -->
+                <article class="tarjeta-pilar">
+                    <h3>♻️ Comercio Consciente</h3>
+                    <p>Apoyamos la produccion local sostenible reduciendo plasticos de un solo uso en cada entrega.</p>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <!-- Pie de página con derechos de autor y enlaces secundarios -->
+    <footer class="pie-pagina">
+        <p>© 2026 Herboraria y Arte - Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces legales y redes">
+            <ul class="menu-footer">
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Pedidos Especiales</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>

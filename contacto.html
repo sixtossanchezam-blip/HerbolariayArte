@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!-- Define el idioma principal del documento como español -->
+<html lang="es">
+<head>
+    <!-- Configuración de codificación de caracteres y vista adaptable -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la pestaña para la sección de contacto -->
+    <title>Contacto | Herboraria y Arte</title>
+    <!-- Enlace a la hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal con marca y barra de navegación -->
+    <header class="encabezado-principal">
+        <a href="index.html" class="marca">🌿 Herboraria & Arte</a>
+
+        <button class="boton-hamburguesa" id="botonHamburguesa"
+                aria-label="Abrir menú" aria-expanded="false" aria-controls="menuNav">
+            ☰ 
+        </button>
+
+        
+        <nav aria-label="Navegacion principal">
+            <ul class="menu-nav" id="menuNav">
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Contenido principal de la página de contacto -->
+    <main>
+        <!-- Título e introducción de la página -->
+        <section class="cabecera-pagina">
+            <h1>Conecta con Nosotros</h1>
+            <p>Realiza un pedido personalizado, consulta disponibilidad o pregunta por nuestras formulas herbales.</p>
+        </section>
+
+        <!-- Contenedor principal que divide el formulario y la información lateral -->
+        <section class="contenedor-contacto">
+            <!-- Formulario de contacto y solicitudes de pedido -->
+            <form action="#" method="post" class="formulario-contacto">
+                
+                <!-- Agrupación de los campos del formulario -->
+                <fieldset class="grupo-campos">
+                    <legend>Datos de Contacto y Pedido</legend>
+
+                    <!-- Campo para el nombre completo con validación de longitud -->
+                    <label for="nombre">Nombre Completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Maria Sixtos" required minlength="3" maxlength="60">
+
+                    <!-- Campo para el correo electrónico -->
+                    <label for="correo">Correo Electronico *</label>
+                    <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+
+                    <!-- Campo para el teléfono con patrón numérico de 10 dígitos -->
+                    <label for="telefono">Telefono / WhatsApp (10 digitos) *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="4771234567" pattern="[0-9]{10}" title="Ingresa un numero valido de 10 digitos" required>
+
+                    <!-- Lista desplegable para elegir el motivo del mensaje -->
+                    <label for="motivo">Motivo de Consulta *</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="" disabled selected>-- Selecciona una opcion --</option>
+                        <option value="pedido">Pedido de Catalogo</option>
+                        <option value="personalizado">Jabon o Formula Personalizada</option>
+                        <option value="mayoreo">Cotizacion por Mayoreo</option>
+                        <option value="duda">Consulta sobre Ingredientes</option>
+                    </select>
+
+                    <!-- Área de texto para escribir los detalles del mensaje o pedido -->
+                    <label for="mensaje">Detalles de tu mensaje o pedido *</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Cuentanos que productos te interesan o que tipo de piel tienes..." required minlength="10"></textarea>
+
+                    <!-- Botón para enviar el formulario -->
+                    <button type="submit" class="boton-principal">Enviar Mensaje</button>
+                </fieldset>
+
+            </form>
+
+            <!-- Barra lateral con datos de ubicación, horario y entregas del taller -->
+            <aside class="info-lateral">
+                <h2>Taller Artesanal</h2>
+                <p><strong>Ubicacion:</strong> Leon, Guanajuato, Mexico.</p>
+                <p><strong>Horario de atencion:</strong> Lunes a Sabado de 10:00 a 19:00 hrs.</p>
+                <p><strong>Entregas:</strong> Puntos medios en la ciudad y envios locales.</p>
+            </aside>
+        </section>
+    </main>
+
+    <!-- Pie de página con derechos de autor y enlaces de navegación -->
+    <footer class="pie-pagina">
+        <p>© 2026 Herboraria y Arte- Todos los derechos reservados.</p>
+        <nav aria-label="Enlaces secundarios">
+            <ul class="menu-footer">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Catalogo</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>
